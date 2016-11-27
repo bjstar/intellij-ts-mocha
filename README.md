@@ -1,6 +1,7 @@
 # Simple node wrapper for IntelliJ Idea 15, typescript, mocha.
 
-It works on IntelliJ Idea 15 / NodeJS plugin. It helps you debug typescript in Intellij Idea 15.
+It works on IntelliJ Idea 15 / NodeJS plugin. It helps you debug typescript in Intellij Idea 15. 
+You don't need this module in IntelliJ Idea 2016. IntelliJ 2016 supports typescript debugging very well.
 
 # How to install
 
