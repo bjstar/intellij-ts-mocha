@@ -1,6 +1,6 @@
 # Simple node wrapper for IntelliJ Idea 15, typescript, mocha.
 
-It works on IntelliJ Idea 15 / Node.js plugin. It helps you debug typescript in Intellij Idea 15.
+It works on IntelliJ Idea 15 / NodeJS plugin. It helps you debug typescript in Intellij Idea 15.
 
 # How to install
 
@@ -22,7 +22,7 @@ If intellij-ts-mocha is installed locally, use {installed directoy}/node-modules
 
 # How to use
 
-Set breakpoint in your typescript test code, run typescript test in you IntelliJ IDEA.
+Set breakpoint in your typescript test code, run typescript test 'Debug ...' in your IntelliJ IDEA.
 IntelliJ will stop at the breakpoint.
 
 It does not compile typescript. Usually, IntelliJ IDEA compiles typescript into javascript automatically. 
