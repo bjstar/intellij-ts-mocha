@@ -1,0 +1,1 @@
+require('./lib/intellij-ts-mocha');

@@ -1,0 +1,24 @@
+{
+  "name": "intellij-ts-mocha",
+  "version": "0.1.0",
+  "description": "Simple node wrapper for IntelliJ Idea 15 & mocha",
+  "main": "index.js",
+  "bin": {
+    "intellij-ts-mocha" : "./bin/intellij-ts-mocha"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "IntelliJ",
+    "IntelliJ15",
+    "mocha",
+    "debug",
+    "node"
+  ],
+  "author": "reuben.baek",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
