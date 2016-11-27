@@ -17,6 +17,11 @@
     "node"
   ],
   "author": "reuben.baek",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/bjstar/intellij-ts-mocha.git"
+  },
+
   "license": "MIT",
   "devDependencies": {
     "mocha": "^3.2.0"
