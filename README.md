@@ -1,33 +1,33 @@
 # Simple node wrapper for IntelliJ Idea 15, typescript, mocha.
 
-It works on IntelliJ Idea 15 / NodeJS plugin. It helps you debug typescript in Intellij Idea 15. 
+This module helps debugging typescript test in IntelliJ Idea 15 with NodeJS plugin and mocha framework.
+NodeJS plugin provides run/debug command for *.js files, and *.js and *.ts files under /test folder.
+Default Mocha run configuration cannot execute typescript test. This module is a simple node wrapper to enable Mocha execute typescript test. 
+If typescript source map is enabled, IntelliJ Idea 15 stops on breakpoint where is set on typescript source. 
 You don't need this module in IntelliJ Idea 2016. IntelliJ 2016 supports typescript debugging very well.
 
-# How to install
+# Quick Start
 
 Install intellij-ts-mocha globally.
 ```
 npm install https://github.com/bjstar/intellij-ts-mocha.git -g
 ```
 
-Edit Intellij Idea 15 Run Configuration.
+Edit Intellij Idea 15 Run Configuration : Menu => 'Run -> Edit Configuration -> Defaults -> Mocha'
 
-move to 'Menu Run -> Edit Configuration -> Defaults -> Mocha'
-
-replace 'Node Interpreter' into 'intellij-ts-mocha'
-
+Replace 'Node Interpreter' property value 
 ```
 /usr/local/bin/node => /usr/local/bin/intellij-ts-mocha
 ```
-If intellij-ts-mocha is installed locally, use {installed directoy}/node-modules/intellij-ts-mocha/bin/intellij-ts-mocha.
 
-# How to use
+# Usage
 
-Set breakpoint in your typescript test code, run typescript test 'Debug ...' in your IntelliJ IDEA.
-IntelliJ will stop at the breakpoint.
+Set breakpoint in your typescript test code and Debug it in your IntelliJ IDEA. IntelliJ will stop at the breakpoint.
 
-It does not compile typescript. Usually, IntelliJ IDEA compiles typescript into javascript automatically. 
-If there is no compiled javascript file (*.js), mocha will throw errors.
+# Note
 
-It assumes typescript test file and its compiled javascript file locates on same directory.
+This module does not compile typescript. 
+Let IntelliJ compile in advance by enabling typescript compile in IntelliJ ( Preferences -> Language and Framework -> Typescript ). 
+
+This moudle assumes *.ts and its compiled *.js, *.js.map file locates on same directory. 
  
